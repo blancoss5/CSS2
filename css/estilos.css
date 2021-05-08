@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+/*
+.center{
+    text-align: center;
+    color: brown;
+}*/
+
+/* clases son como variables, no debe comenzar por numeros
+clases pueden ser emojis 
+clases empiezan por punto  .
+id empiezas con #
+para etiquetas... sin punto
+
+*/
+h1{
+    color: purple;
+}
+/*
+.subtitulo{
+    color: green;
+}*/
+/* asterisco para afectar a sus descendientes*/
+/*
+ul *{
+    color: red;
+    background: yellow;
+  /*  display: none;  dice que no se muestre*/
+  /*
+}*/
+
+span{
+    color: purple;
+    display: block;
+}
+/*
+#hola{
+    color: gray;
+}*/
+
+h1,h2,h3{
+    color: orange;
+}
+/*
+ul li{
+    background:red;
+    color:blue;
+}
+
+
+ul li ul li{
+    background: blue;
+    color: orange;
+}
+
+*/
+/*hermanos directos*/
+
+
+.title-1 + .subtitulo{  /*solo afecta a subtitulo de abajo*/
+ color: red;
+}
+
+.title-2 + .subtitulo{
+    color: blue;
+}
+
+/* hermanos siguientes*/
+
+.hermano-mayor ~.hermano{
+    background: yellow;
+}
+
+
+li > ul{
+    color:purple;
+    display: none;
+}
+
+
+li:hover ul {
+    display: block;
+}
+
+.diferente{
+    color: blue;
+}
+/*
+div h3 span{  /* respetar el orden para que sea propio de alguna manera
+    color: blue;
+}
+
+*/
